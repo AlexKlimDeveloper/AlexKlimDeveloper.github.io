@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+  background-image: linear-gradient(to right bottom, rgba(233, 110, 94, 0.8), rgba(255, 86, 35, 0.8));
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  transition: box-shadow .2s ease-in;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-top: 10px dotted #eee;
+  padding-top: 32px;
+  background: #fdfdfd;
+  box-shadow: 9px 9px 2px #eeecf19e;
+  padding: 20px 10px;
+  border-left: 3px solid #eee;
+  border-top-left-radius: 17px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.site-1 h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin-bottom: 20px;
+}
+
+.site-1 h1:hover {
+  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.site-1 img {
+  width: 400px;
+}
+
+img:hover {
+  box-shadow: 6px 6px 2px #eee;
+  transform: scale(.99);
+}
+
+.site-1 a {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+/* site 2 */
+
+.site-2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.site-2 h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF3366), to(#BA2650));
+  background-image: linear-gradient(to right, #FF3366, #BA2650);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin-bottom: 20px;
+}
+
+.site-2 h1:hover {
+  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.site-2 img {
+  width: 400px;
+  height: 266px;
+}
+
+.site-2 a {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF3366), to(#BA2650));
+  background-image: linear-gradient(to right, #FF3366, #BA2650);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+/* site 3 */
+
+.site-3 {
+  text-align: center;
+}
+
+.site-3 h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f9c766), to(#f86868));
+  background-image: linear-gradient(to right, #f9c766, #f86868);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin-bottom: 20px;
+}
+
+.site-3 h1:hover {
+  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.site-3 img {
+  width: 400px;
+  height: 266px;
+}
+
+.site-3 a {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f9c766), to(#f86868));
+  background-image: linear-gradient(to right, #f9c766, #f86868);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+/* site 4 */
+
+.site-4 {
+  text-align: center;
+}
+
+.site-4 h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#cac367), to(#f86868));
+  background-image: linear-gradient(to right, #cac367, #f86868);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin-bottom: 20px;
+}
+
+.site-4 h1:hover {
+  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.site-4 img {
+  width: 400px;
+  height: 266px;
+}
+
+.site-4 a {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#cac367), to(#f86868));
+  background-image: linear-gradient(to right, #cac367, #f86868);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+/* Adaptive Style */
+
+/* On screens that are 992px or less, set the background color to blue */
+
+@media screen and (max-width: 992px) {}
+
+/* On screens that are 600px or less, set the background color to olive */
+
+@media screen and (max-width: 600px) {
+  .site-1 img {
+    width: 100%;
+  }
+  .site-2 img {
+    width: 100%;
+  }
+  .site-3 img {
+    width: 100%;
+  }
+  .site-4 img {
+    width: 100%;
+  }
+  .site-1,
+  .site-2,
+  .site-3,
+  .site-4 {
+    margin-bottom: 45px;
+    border-bottom: 5px solid #eee;
+    background-color: #6c7f9a12;
+    border-top: 5px solid #eee;
+  }
+}
