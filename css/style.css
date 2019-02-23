@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+}
+
+header {
+  background-image: linear-gradient(to right bottom, rgba(233, 110, 94, 0.8), rgba(255, 86, 35, 0.8)), url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+
+.text {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text h1 {
+  color: #fff;
+  font-size: 65px;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.text p {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Page Animation */
+.text h1 {
+  transform: translateY(-1800px);
+  animation: heading 2s forwards ease-in;
+}
+
+.text p {
+  transform: translateY(-1800px);
+  animation: heading 2s forwards ease-in;
+}
+
+.btn {
+  transform: translateX(-1900px);
+  animation: paragraph 2s forwards ease-in 1s;
+}
+
+/* KeyFrames */
+@keyframes heading {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes paragraph {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.btn {
+  font-family: inherit;
+  color: rgba(255, 86, 35, 0.8);
+  text-decoration: none;
+  font-size: 20px;
+  background: #fff;
+  padding: 10px 55px;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 126px #fff;
+}
+
+.main_content {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  text-align: center;
+}
+
+i {
+  color: #fff;
+  margin-top: 30px;
+}
+
+.box p {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+/* Adaptive Style */
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+
+  .text h1 {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 10%;
+  }
+
+  .text p {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .main_content {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px 20px;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+
+  header {
+    background-image: none;
+  }
+
+
+  body {
+    background-color: rgba(232, 67, 45, 0.8);
+  }
+
+  .btn {
+    color: rgba(232, 67, 45, 0.8);
+  }
+
+  .main_content {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+
+}
