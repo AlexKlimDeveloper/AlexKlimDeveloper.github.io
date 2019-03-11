@@ -686,7 +686,7 @@ header {
   position: relative;
 }
 
-.main-content--title:hover h2.line-title-decoration:after,
+/* .main-content--title:hover h2.line-title-decoration:after,
 .main-content--title:hover h2.line-title-decoration:before {
   width: 20vh;
   height: 3px;
@@ -695,7 +695,7 @@ header {
 
 .main-content--title:hover h2.line-title-decoration:before {
   left: -193px;
-}
+} */
 
 .main-content--title h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
