@@ -686,17 +686,6 @@ header {
   position: relative;
 }
 
-/* .main-content--title:hover h2.line-title-decoration:after,
-.main-content--title:hover h2.line-title-decoration:before {
-  width: 20vh;
-  height: 3px;
-  background: #ebdeb5;
-}
-
-.main-content--title:hover h2.line-title-decoration:before {
-  left: -193px;
-} */
-
 .main-content--title h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -757,12 +746,19 @@ header {
 
   .main-content--title h2.line-title-decoration:after {
     top: 14px;
-    left: 405px;
+    left: 338px;
   }
 
   .main-content--title h2.line-title-decoration:before {
     top: 14px;
-    left: -371px;
+    left: -316px;
+  }
+
+  .main-content--title h2.line-title-decoration:after,
+  .main-content--title h2.line-title-decoration:before {
+    content: ' ';
+    position: absolute;
+    width: 306px;
   }
 
   .main-content--title h2 {
@@ -777,18 +773,35 @@ header {
   }
 }
 
+@media only screen and (max-width: 992px) {
+
+  .main-content--title h2.line-title-decoration:after,
+  .main-content--title h2.line-title-decoration:before {
+    content: ' ';
+    position: absolute;
+    width: 185px;
+  }
+
+  .main-content--title h2.line-title-decoration:before {
+    top: 14px;
+    left: -196px;
+  }
+}
+
 @media only screen and (max-width: 56.25em) {
   .main-content {
     margin-top: 3vh;
   }
 
-  .main-content--title .line {
-    display: none;
+  .main-content--title h2.line-title-decoration:after,
+  .main-content--title h2.line-title-decoration:before {
+   display: none;
   }
 
   .line-decoraion_down {
     display: none;
   }
+
 }
 
 
