@@ -683,12 +683,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.main-content--title:hover .line {
+.main-content--title:hover h2.line-title-decoration:after,
+.main-content--title:hover h2.line-title-decoration:before {
   width: 20vh;
   height: 3px;
   background: #ebdeb5;
+}
+
+.main-content--title:hover h2.line-title-decoration:before {
+  left: -193px;
 }
 
 .main-content--title h2 {
@@ -699,19 +705,26 @@ header {
   color: #434d4a;
 }
 
-.main-content--title .line {
-  width: 35.5vh;
+
+.main-content--title h2.line-title-decoration:after,
+.main-content--title h2.line-title-decoration:before {
+  content: ' ';
+  position: absolute;
+  width: 340px;
   height: 3px;
   background: #ccc;
   transition: all .2s ease-in;
 }
 
-.line-l-margin {
-  margin-right: 18px;
+
+.main-content--title h2.line-title-decoration:after {
+  top: 14px;
+  left: 444px;
 }
 
-.line-r-margin {
-  margin-left: 20px;
+.main-content--title h2.line-title-decoration:before {
+  top: 14px;
+  left: -355px;
 }
 
 .main-content--text p {
@@ -739,6 +752,16 @@ header {
 @media only screen and (max-width: 1200px) {
   .main-content {
     margin-top: 2vh;
+  }
+
+  .main-content--title h2.line-title-decoration:after {
+    top: 14px;
+    left: 405px;
+  }
+
+  .main-content--title h2.line-title-decoration:before {
+    top: 14px;
+    left: -371px;
   }
 
   .main-content--title h2 {
