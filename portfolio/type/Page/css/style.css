@@ -962,15 +962,20 @@ header {
 
 /* Footer */
 
+.footer_style_evolution {
+  background: #e7ebf0;
+}
+
 .footer-st {
   height: 10vh;
   font-family: 'helvetica_neuethin';
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: center;
   background: #e7ebf0;
   align-items: center;
   font-size: 20px;
+  width: 100%;
 }
 
 .footer-st .copy-tight-text {
@@ -1021,6 +1026,13 @@ header {
   .social .fa-twitter,
   .social .fa-facebook,
   .social .fa-instagram {
-    font-size: 20px;
+    font-size: 24px;
+  }
+
+  .footer-st {
+    height: 10vh;
+    font-family: 'helvetica_neuethin';
+    display: flex;
+    justify-content: space-around;
   }
 }
