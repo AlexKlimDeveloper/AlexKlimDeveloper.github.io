@@ -749,6 +749,7 @@ header {
   background: #ebdeb5;
 }
 
+
 @media only screen and (max-width: 1200px) {
   .main-content {
     margin-top: 2vh;
@@ -849,6 +850,8 @@ header {
 .slider-content .slider-inside-content img {
   box-shadow: 5px 6px 6px #ccc;
   border-radius: 4px;
+  height: 215px;
+  margin-top: -4px;
 }
 
 .slider-text {
@@ -933,6 +936,9 @@ header {
 .owl-carousel .owl-nav button.owl-prev:hover {
   color: #c4b496;
 }
+
+
+
 
 @media only screen and (max-width: 37.5em) {
   .owl-nav {
