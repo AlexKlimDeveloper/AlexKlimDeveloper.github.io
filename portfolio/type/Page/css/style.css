@@ -871,6 +871,7 @@ header {
 
   .main-content--title h2 {
     font-size: 20px;
+    margin-top: 20px;
   }
 
   .main-content--text {
