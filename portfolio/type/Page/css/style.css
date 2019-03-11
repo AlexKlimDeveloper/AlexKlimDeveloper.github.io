@@ -48,6 +48,7 @@ header {
   height: auto;
 }
 
+
 @media only screen and (max-width: 56.25em) {
   .header__logo {
     height: auto;
@@ -787,6 +788,9 @@ header {
   margin: 40px auto;
   background: #ebdeb5;
 }
+
+
+
 
 @media only screen and (max-width: 1200px) {
   .main-content {
