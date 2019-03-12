@@ -804,9 +804,9 @@ header {
 /* Title style */
 
 .header_evolution {
-  font-family: "Helvetica Neue Thin", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 92px;
+  font-size: 80px;
   color: #434d4a;
   transition: all .2s ease-in;
   transform: translateX(-1800px);
