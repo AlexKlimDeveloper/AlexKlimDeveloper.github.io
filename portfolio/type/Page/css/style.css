@@ -50,7 +50,15 @@ header {
     background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(../img/main_big_logo.png);
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: 199% -95%;
+    background-position: -96% -84%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .bg_cover {
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(../img/main_big_logo.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -133% -84%;
   }
 }
 
@@ -381,7 +389,7 @@ header {
 /* animation */
 @keyframes pulseAnimation {
   0% {
-    transform: scale(.93);
+    transform: scale(1);
   }
 
   30% {
@@ -903,8 +911,8 @@ header {
   .header_evolution {
     font-size: 20px;
     position: absolute;
-    top: 14%;
-    left: 49%;
+    top: 15%;
+    left: 51%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
@@ -918,7 +926,7 @@ header {
     font-size: 16px;
     position: absolute;
     top: 17%;
-    left: 48%;
+    left: 52%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
