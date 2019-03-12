@@ -30,7 +30,7 @@ body {
 
 header {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.87)), url(../img/main_big_logo.png);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(../img/main_big_logo.png);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: -20% 103%;
@@ -731,7 +731,7 @@ header {
 .link_evolution {
   position: relative;
   top: 133%;
-  left: 14%;
+  left: 4%;
   display: inline-block;
 }
 
@@ -740,6 +740,10 @@ header {
   text-decoration: underline;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
+}
+
+.mb_align {
+  left: 15%;
 }
 
 .link_evolution a:hover,
@@ -829,7 +833,7 @@ header {
 
 @media only screen and (max-width: 1200px) {
   .header_evolution {
-    font-size: 67px;
+    font-size: 54px;
     margin: 0 auto;
     margin-top: 56px;
   }
@@ -1215,32 +1219,30 @@ header {
 .social .fa-facebook,
 .social .fa-instagram {
   font-size: 40px;
+  transition: all .3s ease;
 }
 
 .social .fa-facebook {
-  color: #3C5A99;
-}
-
-.social .fa-facebook:hover {
-  color: rgb(76, 103, 161);
+  color: #fff;
 }
 
 .social .fa-instagram {
-  color: #b5368b;
-}
-
-.social .fa-instagram:hover {
-  color: #aa4f8c;
+  color: #fff;
 }
 
 .social .fa-twitter {
   margin: 0 10px;
+  color: #fff;
 }
+
+
+
 
 .social .fa-instagram:hover,
 .social .fa-twitter:hover,
 .fa-facebook:hover {
   transform: scale(1.1);
+  color: #e7ebf0;
 }
 
 @media only screen and (max-width: 56.25em) {}
