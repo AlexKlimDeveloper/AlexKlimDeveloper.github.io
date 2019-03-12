@@ -29,13 +29,20 @@ body {
 /* Header Style*/
 
 header {
+  /* height: 100vh; */
+  /* background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(../img/main_big_logo.png); */
+  /* background-size: auto;
+  background-repeat: no-repeat;
+  background-position: -20% 103%; */
   height: 100vh;
+  position: relative;
+}
+
+.bg_cover {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(../img/main_big_logo.png);
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: -20% 103%;
-  height: 100vh;
-  position: relative;
+  background-position: -70% -95%;
 }
 
 .header__logo-box {
