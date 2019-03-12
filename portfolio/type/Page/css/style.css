@@ -948,7 +948,7 @@ header {
   font-family: "Helvetica Neue Thin", sans-serif;
   font-weight: bold;
   white-space: nowrap;
-  font-size: 32px;
+  font-size: 31px;
   color: #434d4a;
   margin-left: 11px;
   margin-right: 11px;
@@ -1055,7 +1055,7 @@ header {
   } */
 
   .main-content--title h2 {
-    font-size: 21px;
+    font-size: 20px;
   }
 
   .main-content--title .line {
