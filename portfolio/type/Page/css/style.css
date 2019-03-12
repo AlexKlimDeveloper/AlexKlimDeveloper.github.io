@@ -814,6 +814,12 @@ header {
   margin-top: 70px;
 }
 
+.header_animation {
+  animation: pulseAnimation 5s linear infinite 0s;
+  animation-delay: 1s;
+  backface-visibility: hidden;
+}
+
 
 @keyframes animation2 {
   to {
@@ -823,7 +829,7 @@ header {
 
 @media only screen and (max-width: 1200px) {
   .header_evolution {
-    font-size: 50px;
+    font-size: 67px;
     margin: 0 auto;
     margin-top: 56px;
   }
