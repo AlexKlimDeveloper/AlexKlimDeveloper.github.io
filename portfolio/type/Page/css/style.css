@@ -296,6 +296,7 @@ header {
   transition: all .2s ease-in;
   transform: translateY(-2800px);
   animation: animation1 2s forwards ease-in;
+  animation-delay: 1s;
 }
 
 
@@ -305,6 +306,7 @@ header {
     transform: translateY(0);
   }
 }
+
 
 .circle-container a.center {
   height: auto;
@@ -333,8 +335,33 @@ header {
   transform: scale(1.1);
 }
 
-.circle-container a.center:hover img {
-  transform: scale(.93);
+.circle-container a.center img {
+  animation: pulseAnimation 5s linear infinite 0s;
+  animation-delay: 1s;
+  backface-visibility: hidden;
+}
+
+/* animation */
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(.93);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  60% {
+    transform: scale(.93);
+  }
+
+  90% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(.93);
+  }
 }
 
 .circle-container img {
@@ -784,7 +811,6 @@ header {
   transition: all .2s ease-in;
   transform: translateX(-1800px);
   animation: animation1 2s forwards ease-in;
-  animation-delay: 1.5s;
   margin-top: 70px;
 }
 
@@ -860,7 +886,7 @@ header {
   width: 340px;
   height: 3px;
   background: #ccc;
-  transition: all .2s ease-in;
+  transition: all .8s ease-in;
 }
 
 .main-content--title h2.line-title-decoration:after {
@@ -895,7 +921,7 @@ header {
   height: 3px;
   background: #ccc;
   margin: 40px auto;
-  transition: all .2s ease;
+  transition: all .8s ease;
 }
 
 .main-content--text:hover div.line-decoraion_down {
