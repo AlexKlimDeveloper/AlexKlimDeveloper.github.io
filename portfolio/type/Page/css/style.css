@@ -294,16 +294,24 @@ header {
   margin: 1.75em auto 0;
   z-index: 1;
   transition: all .2s ease-in;
-  transform: translateY(-2800px);
-  animation: animation1 2s forwards ease-in;
-  animation-delay: 1s;
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+	transition: 1s; /*Скорость перехода состояния элемента*/
+	
+	animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
+animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 2s; /* Задержка перед началом */
 }
 
 
 /* Animation*/
-@keyframes animation1 {
-  to {
-    transform: translateY(0);
+@keyframes show {
+  0%{
+    opacity:0;
+  }
+  
+  
+  100% {
+    opacity:1;
   }
 }
 
@@ -329,6 +337,7 @@ header {
   height: 4em;
   margin: -2em;
   transition: all .2s ease;
+  backface-visibility: hidden;
 }
 
 .circle-container a:hover img {
@@ -336,10 +345,16 @@ header {
 }
 
 .circle-container a.center img {
-  animation: pulseAnimation 5s linear infinite 0s;
+  animation: pulseAnimation 5s linear;
   animation-delay: 1s;
+  animation-fill-mode: forwards; 
   backface-visibility: hidden;
 }
+
+.circle-container a.center:hover{
+  transform: scale(0.97);
+}
+
 
 /* animation */
 @keyframes pulseAnimation {
@@ -360,7 +375,7 @@ header {
   }
 
   100% {
-    transform: scale(.93);
+    transform: scale(1);
   }
 }
 
@@ -733,6 +748,7 @@ header {
   top: 133%;
   left: 4%;
   display: inline-block;
+  backface-visibility: hidden;
 }
 
 .link_evolution a {
@@ -740,6 +756,7 @@ header {
   text-decoration: underline;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
+  backface-visibility: hidden;
 }
 
 .mb_align {
@@ -812,22 +829,31 @@ header {
   font-weight: bold;
   font-size: 80px;
   color: #434d4a;
-  transition: all .2s ease-in;
-  transform: translateX(-1800px);
-  animation: animation1 2s forwards ease-in;
+	opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+	transition: 1s; /*Скорость перехода состояния элемента*/
+	
+	animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 1s; /* Задержка перед началом */
   margin-top: 70px;
 }
 
 .header_animation {
-  animation: pulseAnimation 5s linear infinite 0s;
+  animation: pulseAnimation 5s linear;
+  animation-fill-mode: forwards; 
   animation-delay: 1s;
   backface-visibility: hidden;
 }
 
 
-@keyframes animation2 {
-  to {
-    transform: translateX(0);
+@keyframes show{
+  0%{
+    opacity:0;
+  }
+  
+  
+  100% {
+    opacity:1;
   }
 }
 
@@ -851,11 +877,11 @@ header {
     font-size: 20px;
     position: absolute;
     top: 14%;
-    left: 15%;
+    left: 49%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    animation: animation1 0s forwards ease-in;
+    animation: show 0s forwards ease-in;
     animation-delay: 0s;
   }
 }
@@ -864,8 +890,8 @@ header {
   .header_evolution {
     font-size: 16px;
     position: absolute;
-    top: 15%;
-    left: 16%;
+    top: 17%;
+    left: 48%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
