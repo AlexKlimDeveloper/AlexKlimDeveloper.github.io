@@ -45,6 +45,16 @@ header {
   background-position: -70% -95%;
 }
 
+@media only screen and (max-width: 1500px) {
+  .bg_cover {
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(../img/main_big_logo.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 199% -95%;
+  }
+}
+
+
 .header__logo-box {
   position: absolute;
   top: 4rem;
@@ -301,24 +311,29 @@ header {
   margin: 1.75em auto 0;
   z-index: 1;
   transition: all .2s ease-in;
-  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
-	transition: 1s; /*Скорость перехода состояния элемента*/
-	
-	animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
-animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
-  animation-delay: 2s; /* Задержка перед началом */
+  opacity: 0;
+  /*Элемент полностью прозрачный (невидимый)*/
+  transition: 1s;
+  /*Скорость перехода состояния элемента*/
+
+  animation: show 3s 1;
+  /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards;
+  /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 2s;
+  /* Задержка перед началом */
 }
 
 
 /* Animation*/
 @keyframes show {
-  0%{
-    opacity:0;
+  0% {
+    opacity: 0;
   }
-  
-  
+
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
@@ -354,11 +369,11 @@ animation-fill-mode: forwards; /* Чтобы элемент оставался �
 .circle-container a.center img {
   animation: pulseAnimation 5s linear;
   animation-delay: 1s;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards;
   backface-visibility: hidden;
 }
 
-.circle-container a.center:hover{
+.circle-container a.center:hover {
   transform: scale(0.97);
 }
 
@@ -836,31 +851,36 @@ animation-fill-mode: forwards; /* Чтобы элемент оставался �
   font-weight: bold;
   font-size: 80px;
   color: #434d4a;
-	opacity:0; /*Элемент полностью прозрачный (невидимый)*/
-	transition: 1s; /*Скорость перехода состояния элемента*/
-	
-	animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
-  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
-  animation-delay: 1s; /* Задержка перед началом */
+  opacity: 0;
+  /*Элемент полностью прозрачный (невидимый)*/
+  transition: 1s;
+  /*Скорость перехода состояния элемента*/
+
+  animation: show 3s 1;
+  /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards;
+  /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 1s;
+  /* Задержка перед началом */
   margin-top: 70px;
 }
 
 .header_animation {
   animation: pulseAnimation 5s linear;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards;
   animation-delay: 1s;
   backface-visibility: hidden;
 }
 
 
-@keyframes show{
-  0%{
-    opacity:0;
+@keyframes show {
+  0% {
+    opacity: 0;
   }
-  
-  
+
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
@@ -920,9 +940,11 @@ animation-fill-mode: forwards; /* Чтобы элемент оставался �
   white-space: nowrap;
   font-size: 32px;
   color: #434d4a;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-.main-content--title h2.line-title-decoration:after,
+/* .main-content--title h2.line-title-decoration:after,
 .main-content--title h2.line-title-decoration:before {
   content: ' ';
   position: absolute;
@@ -950,6 +972,19 @@ animation-fill-mode: forwards; /* Чтобы элемент оставался �
 
 .main-content--title:hover h2.line-title-decoration:before {
   left: -145px;
+} */
+
+.line-decoration {
+  width: 340px;
+  height: 3px;
+  background: #ccc;
+  transition: all .8s;
+}
+
+.main-content--title:hover .line-decoration {
+  width: 140px;
+  transition: all .8s;
+  background: #ebdeb5;
 }
 
 .main-content--text p {
@@ -986,7 +1021,14 @@ animation-fill-mode: forwards; /* Чтобы элемент оставался �
     left: 318px;
   }
 
-  .main-content--title:hover h2.line-title-decoration:before {
+  .line-decoration {
+    width: 320px;
+    height: 3px;
+    background: #ccc;
+    transition: all .8s;
+  }
+
+  /* .main-content--title:hover h2.line-title-decoration:before {
     left: -111px;
   }
 
@@ -1000,7 +1042,7 @@ animation-fill-mode: forwards; /* Чтобы элемент оставался �
     content: ' ';
     position: absolute;
     width: 306px;
-  }
+  } */
 
   .main-content--title h2 {
     font-size: 22px;
@@ -1016,22 +1058,21 @@ animation-fill-mode: forwards; /* Чтобы элемент оставался �
 
 @media only screen and (max-width: 992px) {
 
-  .main-content--title h2.line-title-decoration:after,
-  .main-content--title h2.line-title-decoration:before {
-    content: ' ';
-    position: absolute;
-    width: 185px;
-  }
-
-  .main-content--title h2.line-title-decoration:before {
-    top: 14px;
-    left: -196px;
+  .line-decoration {
+    width: 199px;
+    height: 3px;
+    background: #ccc;
+    transition: all .8s;
   }
 }
 
 @media only screen and (max-width: 56.25em) {
   .main-content {
     margin-top: 3vh;
+  }
+
+  .line-decoration {
+  display: none;
   }
 
   .main-content--title h2.line-title-decoration:after,
@@ -1064,6 +1105,8 @@ animation-fill-mode: forwards; /* Чтобы элемент оставался �
     display: block;
     width: 115%;
     content: ' ';
+    background: #ccc;
+    height: 3px;
   }
 
   .main-content--title h2 {
@@ -1104,6 +1147,8 @@ animation-fill-mode: forwards; /* Чтобы элемент оставался �
     display: block;
     width: 124%;
     content: ' ';
+    background: #ccc;
+    height: 3px;
   }
 }
 
