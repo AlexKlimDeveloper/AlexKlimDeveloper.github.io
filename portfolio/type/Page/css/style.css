@@ -352,6 +352,7 @@ header {
   top: 47px;
   left: 73px;
   transition: all .3s ease;
+  backface-visibility: hidden;
 }
 
 .circle-container img {
@@ -370,9 +371,7 @@ header {
   backface-visibility: hidden;
 }
 
-.circle-container a:hover img {
-  transform: scale(1.1);
-}
+
 
 .circle-container a.center img {
   animation: pulseAnimation 5s linear;
@@ -385,6 +384,9 @@ header {
   transform: scale(0.97);
 }
 
+.circle-container a.l:hover  img {
+  transform: scale(1.1);
+}
 
 /* animation */
 @keyframes pulseAnimation {
@@ -873,12 +875,12 @@ header {
   margin-top: 70px;
 }
 
-.header_animation {
+/* .header_animation {
   animation: pulseAnimation 5s linear;
   animation-fill-mode: forwards;
   animation-delay: 1s;
   backface-visibility: hidden;
-}
+} */
 
 
 @keyframes show {
@@ -948,8 +950,8 @@ header {
   white-space: nowrap;
   font-size: 32px;
   color: #434d4a;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 11px;
+  margin-right: 11px;
 }
 
 /* .main-content--title h2.line-title-decoration:after,
@@ -1053,7 +1055,7 @@ header {
   } */
 
   .main-content--title h2 {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .main-content--title .line {
