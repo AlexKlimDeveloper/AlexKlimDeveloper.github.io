@@ -30,7 +30,7 @@ body {
 /* Header Style*/
 
 header {
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -106,6 +106,9 @@ header {
   padding-top: 27vh;
 }
 
+.main-content {
+  margin-top: 10%;
+}
 /* MENU BUTTON */
 
 .navigation__checkbox {
