@@ -1,12 +1,13 @@
-/* Reset Style */
+/* Font-family */
+
 @font-face {
   font-family: 'Helvetica Neue Thin';
-  src: url('font/helveticaneue-thin-webfont.woff2') format('woff2'),
-    url('font/helveticaneue-thin-webfont.woff') format('woff');
+  src: url('font/helveticaneue-thin-webfont.woff2') format('woff2'), url('font/helveticaneue-thin-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
+
+/* Reset Style */
 
 * {
   padding: 0;
@@ -29,11 +30,6 @@ body {
 /* Header Style*/
 
 header {
-  /* height: 100vh; */
-  /* background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(../img/main_big_logo.png); */
-  /* background-size: auto;
-  background-repeat: no-repeat;
-  background-position: -20% 103%; */
   height: 100vh;
   position: relative;
 }
@@ -53,6 +49,7 @@ header {
     background-position: -96% -84%;
   }
 }
+
 @media only screen and (max-width: 1400px) {
   .bg_cover {
     background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(../img/main_big_logo.png);
@@ -61,7 +58,6 @@ header {
     background-position: -133% -84%;
   }
 }
-
 
 .header__logo-box {
   position: absolute;
@@ -72,7 +68,6 @@ header {
 .header__logo {
   height: auto;
 }
-
 
 @media only screen and (max-width: 56.25em) {
   .header__logo {
@@ -86,11 +81,12 @@ header {
     height: auto;
     width: 130px;
   }
-
-  header {
+  .bg_cover {
     background-image: none;
   }
-
+  header {
+    height: 100vh !important;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -99,9 +95,13 @@ header {
     top: 4rem;
     left: 2rem;
   }
+  header {
+    height: 100vh !important;
+  }
 }
 
 /* Utilitu */
+
 .pt {
   padding-top: 27vh;
 }
@@ -320,31 +320,22 @@ header {
   z-index: 1;
   transition: all .2s ease-in;
   opacity: 0;
-  /*Элемент полностью прозрачный (невидимый)*/
   transition: 1s;
-  /*Скорость перехода состояния элемента*/
-
   animation: show 3s 1;
-  /* Указываем название анимации, её время и количество повторов*/
   animation-fill-mode: forwards;
-  /* Чтобы элемент оставался в конечном состоянии анимации */
   animation-delay: 2s;
-  /* Задержка перед началом */
 }
 
-
 /* Animation*/
+
 @keyframes show {
   0% {
     opacity: 0;
   }
-
-
   100% {
     opacity: 1;
   }
 }
-
 
 .circle-container a.center {
   height: auto;
@@ -371,8 +362,6 @@ header {
   backface-visibility: hidden;
 }
 
-
-
 .circle-container a.center img {
   animation: pulseAnimation 5s linear;
   animation-delay: 1s;
@@ -384,28 +373,25 @@ header {
   transform: scale(0.97);
 }
 
-.circle-container a.l:hover  img {
+.circle-container a.l:hover img {
   transform: scale(1.1);
 }
 
 /* animation */
+
 @keyframes pulseAnimation {
   0% {
     transform: scale(1);
   }
-
   30% {
     transform: scale(1);
   }
-
   60% {
     transform: scale(.93);
   }
-
   90% {
     transform: scale(1);
   }
-
   100% {
     transform: scale(1);
   }
@@ -421,6 +407,7 @@ header {
 }
 
 /* 12em = half the width of the wrapper */
+
 .deg15 {
   transform: rotate(-46deg) translate(12.3em) rotate(89deg);
 }
@@ -497,7 +484,6 @@ header {
     left: 85px;
     transition: all .5s ease;
   }
-
   .circle-container a {
     display: block;
     position: absolute;
@@ -508,76 +494,58 @@ header {
     margin: -2em;
     transition: all .2s ease;
   }
-
   .deg0 {
     transform: rotate(-14deg) translate(9.8em) rotate(3deg);
   }
-
   /* 12em = half the width of the wrapper */
   .deg15 {
     transform: rotate(-46deg) translate(10.3em) rotate(89deg);
   }
-
   .deg45 {
     transform: rotate(22deg) translate(9.3em) rotate(-20deg);
   }
-
   .deg65 {
     transform: rotate(63deg) translate(9em) rotate(-65deg);
   }
-
   .deg85 {
     transform: rotate(101deg) translate(8.7em) rotate(-102deg);
   }
-
   .deg135 {
     transform: rotate(141deg) translate(9.1em) rotate(-132deg);
   }
-
   .deg145 {
     transform: rotate(175deg) translate(9.8em) rotate(-183deg);
   }
-
   .deg165 {
     transform: rotate(210deg) translate(10em) rotate(56deg);
   }
-
   .deg180 {
     transform: rotate(237deg) translate(11em) rotate(-238deg);
   }
-
   .deg225 {
     transform: rotate(264deg) translate(11em) rotate(-264deg);
   }
-
   .deg315 {
     transform: rotate(289deg) translate(11em) rotate(-268deg);
   }
-
   .deg15_sec {
     transform: rotate(-35deg) translate(10.5em) rotate(34deg);
   }
-
   .deg45_sec {
     transform: rotate(8deg) translate(9.4em) rotate(-6deg);
   }
-
   .deg65_sec {
     transform: rotate(55deg) translate(9em) rotate(-56deg);
   }
-
   .deg85_sec {
     transform: rotate(119deg) translate(8.7em) rotate(-117deg);
   }
-
   .deg135_sec {
     transform: rotate(171deg) translate(9.6em) rotate(-170deg);
   }
-
   .deg165_sec {
     transform: rotate(217deg) translate(10.7em) rotate(143deg);
   }
-
   .deg225_sec {
     transform: rotate(270deg) translate(11.5em) rotate(-264deg);
   }
@@ -591,7 +559,6 @@ header {
     left: 85px;
     transition: all .5s ease;
   }
-
   .circle-container a {
     display: block;
     position: absolute;
@@ -602,80 +569,61 @@ header {
     margin: -2em;
     transition: all .2s ease;
   }
-
   .deg0 {
     transform: rotate(-14deg) translate(9.8em) rotate(3deg);
   }
-
   /* 12em = half the width of the wrapper */
   .deg15 {
     transform: rotate(-46deg) translate(10.3em) rotate(89deg);
   }
-
   .deg45 {
     transform: rotate(22deg) translate(9.3em) rotate(-20deg);
   }
-
   .deg65 {
     transform: rotate(63deg) translate(9em) rotate(-65deg);
   }
-
   .deg85 {
     transform: rotate(101deg) translate(8.7em) rotate(-102deg);
   }
-
   .deg135 {
     transform: rotate(141deg) translate(9.1em) rotate(-132deg);
   }
-
   .deg145 {
     transform: rotate(175deg) translate(9.8em) rotate(-183deg);
   }
-
   .deg165 {
     transform: rotate(210deg) translate(10em) rotate(56deg);
   }
-
   .deg180 {
     transform: rotate(237deg) translate(11em) rotate(-238deg);
   }
-
   .deg225 {
     transform: rotate(264deg) translate(11em) rotate(-264deg);
   }
-
   .deg315 {
     transform: rotate(289deg) translate(11em) rotate(-268deg);
   }
-
   .deg15_sec {
     transform: rotate(-35deg) translate(10.5em) rotate(34deg);
   }
-
   .deg45_sec {
     transform: rotate(8deg) translate(9.4em) rotate(-6deg);
   }
-
   .deg65_sec {
     transform: rotate(55deg) translate(9em) rotate(-56deg);
   }
-
   .deg85_sec {
     transform: rotate(119deg) translate(8.7em) rotate(-117deg);
   }
-
   .deg135_sec {
     transform: rotate(171deg) translate(9.6em) rotate(-170deg);
   }
-
   .deg165_sec {
     transform: rotate(217deg) translate(10.7em) rotate(143deg);
   }
-
   .deg225_sec {
     transform: rotate(270deg) translate(11.5em) rotate(-264deg);
   }
-
 }
 
 @media only screen and (max-width: 320px) {
@@ -686,7 +634,6 @@ header {
     left: 88px;
     transition: all .5s ease;
   }
-
   .circle-container a {
     display: block;
     position: absolute;
@@ -697,80 +644,61 @@ header {
     margin: -2em;
     transition: all .2s ease;
   }
-
   .deg0 {
     transform: rotate(-14deg) translate(7.8em) rotate(3deg);
   }
-
   /* 12em = half the width of the wrapper */
   .deg15 {
     transform: rotate(-46deg) translate(8.3em) rotate(89deg);
   }
-
   .deg45 {
     transform: rotate(22deg) translate(7.3em) rotate(-20deg);
   }
-
   .deg65 {
     transform: rotate(63deg) translate(7em) rotate(-65deg);
   }
-
   .deg85 {
     transform: rotate(101deg) translate(6.7em) rotate(-102deg);
   }
-
   .deg135 {
     transform: rotate(141deg) translate(7.1em) rotate(-132deg);
   }
-
   .deg145 {
     transform: rotate(175deg) translate(7.8em) rotate(-183deg);
   }
-
   .deg165 {
     transform: rotate(210deg) translate(8em) rotate(56deg);
   }
-
   .deg180 {
     transform: rotate(237deg) translate(9em) rotate(-238deg);
   }
-
   .deg225 {
     transform: rotate(264deg) translate(9em) rotate(-264deg);
   }
-
   .deg315 {
     transform: rotate(289deg) translate(9em) rotate(-268deg);
   }
-
   .deg15_sec {
     transform: rotate(-35deg) translate(8.5em) rotate(34deg);
   }
-
   .deg45_sec {
     transform: rotate(8deg) translate(7.4em) rotate(-6deg);
   }
-
   .deg65_sec {
     transform: rotate(55deg) translate(7em) rotate(-56deg);
   }
-
   .deg85_sec {
     transform: rotate(119deg) translate(6.7em) rotate(-117deg);
   }
-
   .deg135_sec {
     transform: rotate(171deg) translate(7.6em) rotate(-170deg);
   }
-
   .deg165_sec {
     transform: rotate(217deg) translate(8.7em) rotate(143deg);
   }
-
   .deg225_sec {
     transform: rotate(270deg) translate(9.5em) rotate(-264deg);
   }
-
 }
 
 /* Link Style*/
@@ -807,7 +735,6 @@ header {
     left: 16%;
     display: inline-block;
   }
-
   .link_evolution a {
     color: #7b896b;
     text-decoration: underline;
@@ -823,11 +750,9 @@ header {
     left: 16%;
     display: inline-block;
   }
-
   .link_evolution.mb_align {
     left: 23%;
   }
-
   .link_evolution a {
     color: #7b896b;
     text-decoration: underline;
@@ -843,12 +768,10 @@ header {
     left: 8%;
     display: inline-block;
   }
-
   .link_evolution.mb_align {
     left: 19%;
     top: 98%;
   }
-
   .showcase {
     overflow: hidden;
   }
@@ -862,33 +785,17 @@ header {
   font-size: 80px;
   color: #434d4a;
   opacity: 0;
-  /*Элемент полностью прозрачный (невидимый)*/
   transition: 1s;
-  /*Скорость перехода состояния элемента*/
-
   animation: show 3s 1;
-  /* Указываем название анимации, её время и количество повторов*/
   animation-fill-mode: forwards;
-  /* Чтобы элемент оставался в конечном состоянии анимации */
   animation-delay: 1s;
-  /* Задержка перед началом */
   margin-top: 70px;
 }
-
-/* .header_animation {
-  animation: pulseAnimation 5s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
-  backface-visibility: hidden;
-} */
-
 
 @keyframes show {
   0% {
     opacity: 0;
   }
-
-
   100% {
     opacity: 1;
   }
@@ -935,6 +842,7 @@ header {
 }
 
 /* Main Content style*/
+
 .main-content--title {
   margin: auto;
   margin-bottom: 10px;
@@ -953,36 +861,6 @@ header {
   margin-left: 11px;
   margin-right: 11px;
 }
-
-/* .main-content--title h2.line-title-decoration:after,
-.main-content--title h2.line-title-decoration:before {
-  content: ' ';
-  position: absolute;
-  width: 340px;
-  height: 3px;
-  background: #ccc;
-  transition: all .8s ease-in;
-}
-
-.main-content--title h2.line-title-decoration:after {
-  top: 14px;
-  left: 444px;
-}
-
-.main-content--title h2.line-title-decoration:before {
-  top: 14px;
-  left: -355px;
-}
-
-.main-content--title:hover h2.line-title-decoration:after,
-.main-content--title:hover h2.line-title-decoration:before {
-  width: 30%;
-  background: #ebdeb5;
-}
-
-.main-content--title:hover h2.line-title-decoration:before {
-  left: -145px;
-} */
 
 .line-decoration {
   width: 340px;
@@ -1020,44 +898,23 @@ header {
   background: #ebdeb5;
 }
 
-
 @media only screen and (max-width: 1200px) {
   .main-content {
     margin-top: 2vh;
   }
-
   .main-content--title h2.line-title-decoration:after {
     top: 14px;
     left: 318px;
   }
-
   .line-decoration {
     width: 320px;
     height: 3px;
     background: #ccc;
     transition: all .8s;
   }
-
-  /* .main-content--title:hover h2.line-title-decoration:before {
-    left: -111px;
-  }
-
-  .main-content--title h2.line-title-decoration:before {
-    top: 14px;
-    left: -333px;
-  }
-
-  .main-content--title h2.line-title-decoration:after,
-  .main-content--title h2.line-title-decoration:before {
-    content: ' ';
-    position: absolute;
-    width: 306px;
-  } */
-
   .main-content--title h2 {
     font-size: 20px;
   }
-
   .main-content--title .line {
     width: 15vh;
     height: 3px;
@@ -1067,7 +924,6 @@ header {
 }
 
 @media only screen and (max-width: 992px) {
-
   .line-decoration {
     width: 199px;
     height: 3px;
@@ -1080,20 +936,16 @@ header {
   .main-content {
     margin-top: 3vh;
   }
-
   .line-decoration {
-  display: none;
+    display: none;
   }
-
   .main-content--title h2.line-title-decoration:after,
   .main-content--title h2.line-title-decoration:before {
     display: none;
   }
-
   .line-decoraion_down {
     width: 100%;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -1107,7 +959,6 @@ header {
     margin-top: 50vh;
     padding: 10px;
   }
-
   .main-content--title h2.line-title-decoration:before {
     top: -15px;
     position: absolute;
@@ -1118,16 +969,13 @@ header {
     background: #ccc;
     height: 3px;
   }
-
   .main-content--title h2 {
     font-size: 20px;
     margin-top: 20px;
   }
-
   .main-content--text {
     font-size: 14px;
   }
-
   .main-content--title .line {
     display: none;
   }
@@ -1145,11 +993,9 @@ header {
     margin-top: 65vh;
     padding: 10px;
   }
-
   .main-content--title h2 {
     font-size: 16px;
   }
-
   .main-content--title h2.line-title-decoration:before {
     top: -15px;
     position: absolute;
@@ -1163,6 +1009,7 @@ header {
 }
 
 /* Slider style */
+
 .slider-content {
   width: 94%;
   margin: 50px auto;
@@ -1295,7 +1142,6 @@ header {
   width: 100%;
 }
 
-
 .copy_right_text {
   color: #e4dfdf;
   font-family: "Helvetica Neue", Helvetica, "Open Sans", Arial, sans-serif;
@@ -1323,9 +1169,6 @@ header {
   color: #fff;
 }
 
-
-
-
 .social .fa-instagram:hover,
 .social .fa-twitter:hover,
 .fa-facebook:hover {
@@ -1336,22 +1179,25 @@ header {
 @media only screen and (max-width: 56.25em) {}
 
 @media only screen and (max-width: 37.5em) {
-
   .footer-st .copy_right_text {
     font-family: 'helvetica_neuethin';
     font-size: 13px;
   }
-
   .social .fa-twitter,
   .social .fa-facebook,
   .social .fa-instagram {
     font-size: 24px;
   }
-
   .footer-st {
     height: 10vh;
     font-family: 'helvetica_neuethin';
     display: flex;
     justify-content: space-around;
+  }
+}
+
+@media only screen and (max-device-width: 1980px) and (max-device-height: 700px) {
+  header {
+    height: 100%;
   }
 }
