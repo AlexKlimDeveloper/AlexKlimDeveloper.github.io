@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kali Bailey</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/video.popup.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <ul class="menu">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </header>
+
+    <section class="main-content">
+
+        <div class="video-box">
+            <a class="video" video-url="https://vimeo.com/319080488"
+                style="background-image:url('img/TheFortyPercentN.png');">
+            </a>
+            <div class="title-video">
+                <h1>The Forty Percent - Nashville Launchpad</h1>
+                <h2>A teenage girl reveals a secret to her parents, who have a devastating reaction...</h2>
+            </div>
+        </div>
+
+        <div class="video-box">
+            <a class="video" video-url="https://vimeo.com/245980569"
+                style="background-image:url('img/AmericasSportNewBalanceonVimeo.png');">
+            </a>
+            <div class="title-video">
+                <h1>America’s Sport - New Balance</h1>
+                <h2>An immigrant from Mexico pursues his dream: playing baseball in the United States.</h2>
+            </div>
+        </div>
+
+        <div class="video-box">
+            <a class="video" video-url="https://vimeo.com/278929553"
+                style="background-image:url('img/LostDogonVimeo.png');">
+            </a>
+            <div class="title-video">
+                <h1>Lost Dog</h1>
+                <h2>The girl lost her dog.</h2>
+            </div>
+        </div>
+
+        <div class="video-box">
+            <a class="video" video-url="https://vimeo.com/319079397"
+                style="background-image:url('img/MeettheMealMakerBuddigonVimeo.png');">
+            </a>
+            <div class="title-video">
+                <h1>Meet the Meal Maker - Buddig</h1>
+                <h2>Carl Buddig has a long history of enabling Meal Makers to provide delicious food for their families.
+                    In this documentary style commercial, the Nehrenz family celebrates the meal maker and matriarch of
+                    their family: Ruth Nehrenz.</h2>
+            </div>
+        </div>
+
+        <div class="video-box">
+            <a class="video" video-url="https://vimeo.com/230803875"
+                style="background-image:url('img/MailfortheMailmanonVimeo.png');">
+            </a>
+            <div class="title-video">
+                <h1>Mail for the Mailman</h1>
+                <h2>A Hallmark spec commercial about a little girl and her friend, the mailman.</h2>
+            </div>
+        </div>
+
+        <div class="video-box">
+            <a class="video" video-url="https://vimeo.com/319079314"
+                style="background-image:url('img/DadsGarageMercedesonVimeo.png');">
+            </a>
+            <div class="title-video">
+                <h1>Dad’s Garage - Mercedes</h1>
+                <h2>Julian Reid's hobby is taking old Mercedes and restoring them to life. In this short documentary,
+                    Julian describes his process and passion for Mercedes vehicles.</h2>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="about">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="img/about_Kali_photo.jpg" alt="kali-about">
+                <div class="about-info" id="about">
+                        <h1>About</h1>
+                        <p>Kali Bailey is a commercial and narrative film director based in Nashville, TN.</p>
+                        <p>She has worked in the film industry for over 10 years.</p>
+                        <p>With a background as a First Assistant Director and formal training in the Adobe
+                            Creative Cloud Suite, Kali brings pre-production, production and post-production experience to the
+                            table.</p>
+        
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer" id="contact">
+        <div class="footer-link">
+            <a href="https://www.facebook.com/kali.bailey.393" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
+            <a href="https://www.instagram.com/whereiskalibailey/" target="_blank"><i class="fa fa-instagram"aria-hidden="true"></i></a>
+        </div>
+        <div class="footer-contact"> +1 (229) 347-3083 | <a
+                href="mailto:kalibailey33@gmail.com">kalibailey33@gmail.com</a> </div>
+    </footer>
+
+    
+
+    <div class="scrollup">
+        <i class="fa fa-chevron-up"></i>
+     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="src/video.popup.js"></script>
+    <script>
+        $(function () {
+            //For IE 11 
+            if (typeof Object.assign != 'function') {
+                Object.assign = function (target) {
+                    'use strict';
+                    if (target == null) {
+                        throw new TypeError('Cannot convert undefined or null to object');
+                    }
+
+                    target = Object(target);
+                    for (var index = 1; index < arguments.length; index++) {
+                        var source = arguments[index];
+                        if (source != null) {
+                            for (var key in source) {
+                                if (Object.prototype.hasOwnProperty.call(source, key)) {
+                                    target[key] = source[key];
+                                }
+                            }
+                        }
+                    }
+                    return target;
+                };
+            }
+            // Pop up Video Js
+            $(".video").videoPopup();
+
+
+             // Scrollup button
+            $('.scrollup').click(function() {
+                   $("html, body").animate({
+                scrollTop:0
+                });
+            })
+            })
+            $(window).scroll(function() {
+                if ($(this).scrollTop()>200) {
+                        $('.scrollup').fadeIn();
+            }
+            else {
+                $('.scrollup').fadeOut();
+            }
+
+              });
+     
+    </script>
+</body>
+
+</html>
