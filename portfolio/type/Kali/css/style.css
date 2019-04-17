@@ -124,6 +124,7 @@ header:hover {
         display: flex;
         justify-content: flex-end;
         margin: 28px -7px;
+        display: none;
     }
 }
 
@@ -165,7 +166,7 @@ header:hover {
 }
 
 .my-video-photo img {
-    opacity: 0.7;
+    opacity: 0.6;
     height: 50vh;
     width: 100%;
     -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
@@ -173,7 +174,7 @@ header:hover {
 }
 
 .my-video-photo img:hover {
-    opacity: 0.9;
+    /* opacity: 0.9; */
     transform: scale(1.15);
 }
 
@@ -211,38 +212,48 @@ header:hover {
 
 .title-video h1 {
     color: #fff;
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'Brandon Grotesque Light';
     text-transform: uppercase;
     position: relative;
     padding-bottom: 30px;
-    font-weight: normal;
+    letter-spacing: 4px;
+    /* font-weight: normal; */
 }
 
 .title-video h2 {
     color: #fff;
-    font-size: 14px;
     font-family: 'Brandon Grotesque Light';
-    font-weight: 100;
+    font-size: 12px;
+    font-weight: 600;
     position: relative;
     width: 600px;
     line-height: 1.4;
-    font-weight: normal;
+    letter-spacing: 1px;
+    /* font-weight: normal; */
+    text-transform: uppercase;
 }
 
-/* .title-video h1:before {
+.title-video h1:before {
     content: ' ';
-    border: 1px solid yellow;
+    border: 1px solid #FFD700;
     width: 70px;
     position: absolute;
     top: 40px;
-    background: yellow;
-} */
+    background: #FFD700;
+}
 
 @media screen and (max-width: 800px) {
     .my-video-photo img {
-        opacity: 0.7;
+        opacity: 0.6;
         height: 23vh;
+    }
+
+    .title-video {
+        position: absolute;
+        z-index: 10;
+        top: 59%;
+        left: 2rem;
     }
 }
 
@@ -251,7 +262,7 @@ header:hover {
         font-size: 16px;
         font-family: 'Brandon Grotesque Light';
         text-transform: uppercase;
-        font-weight: normal;
+        /* font-weight: normal; */
     }
 
     .title-video h2 {
@@ -260,7 +271,7 @@ header:hover {
     }
 
     .title-video {
-        top: 78%;
+        top: 52%;
     }
 
     .about-info {
@@ -268,6 +279,15 @@ header:hover {
         color: #fff;
         margin-bottom: 5px;
         padding: 8% 1% 1% 1%;
+    }
+
+    .title-video h1:before {
+        content: ' ';
+        border: 1px solid #FFD700;
+        width: 40px;
+        position: absolute;
+        top: 33px;
+        background: #FFD700;
     }
 }
 
@@ -278,7 +298,7 @@ header:hover {
         font-size: 14px;
         font-family: 'Brandon Grotesque Light';
         text-transform: uppercase;
-        font-weight: normal
+        /* font-weight: normal */
     }
 
     .title-video h2 {
@@ -287,7 +307,7 @@ header:hover {
     }
 
     .title-video {
-        top: 74%;
+        top: 52%;
     }
 
     .about-info {
@@ -302,7 +322,7 @@ header:hover {
 
 @media screen and (max-width: 320px) {
     .title-video {
-        top: 73%;
+        top: 48%;
     }
 
     .title-video h1 {
@@ -341,9 +361,8 @@ header:hover {
     font-size: 24px;
     font-weight: normal;
     font-family: 'Brandon Grotesque Light';
-    margin: 0 auto;
+    margin: 25px auto;
     text-align: center;
-    margin-bottom: 25px;
 }
 
 .about-info h3 {
@@ -364,7 +383,7 @@ header:hover {
     content: '';
     position: absolute;
     width: 100%;
-    border-top: 2px solid #838a1e;
+    border-top: 2px solid #FFD700;
     margin-top: .6em;
 }
 
@@ -399,6 +418,7 @@ header:hover {
 }
 
 @media screen and (max-width: 1040px) {
+
     .about-info,
     .about-img {
         width: 100%;
@@ -407,10 +427,29 @@ header:hover {
     .about-img img {
         margin-bottom: -7px;
     }
-.about-container {
-    flex-direction: column-reverse;
+
+    .about-container {
+        flex-direction: column-reverse;
+    }
+
 }
 
+@media screen and (max-width: 800px) {
+    .about-info {
+        margin-bottom: -7px;
+    }
+
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-info {
+        background: #000;
+        color: #fff;
+        margin-bottom: -5px;
+        padding: 4% 1% 10% 1%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -419,8 +458,19 @@ header:hover {
     }
 
     .about-info h3 {
-        width:250px;
+        width: 250px;
     }
+
+    .about-info {
+        margin-bottom: -7px;
+    }
+
+
+    .about-container {
+        flex-direction: column;
+    }
+
+
 }
 
 
