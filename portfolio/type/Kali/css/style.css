@@ -49,12 +49,17 @@ header {
     z-index: 11;
 }
 
+.mob-logo {
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
 
     header {
-        background: none;
-        position: absolute;
+        background: #4c4a4a;
+        position: inherit;
     }
+
 }
 
 /* header:hover {
@@ -77,6 +82,38 @@ header {
 .logo-box img {
     height: 50px;
     width: auto;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+
+    header .logo-box .lap-top {
+        display: none;
+    }
+
+    .mob-logo {
+        display: inline-block;
+    }
+
+    .logo-box {
+        width: auto;
+        height: 30px;
+        position: absolute;
+        z-index: 1011;
+        left: 25px;
+        top: 25px;
+        top: 4%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .logo-box span {
+        margin-top: -20px;
+    }
 }
 
 .menu {
@@ -119,7 +156,7 @@ header {
     }
 
     .logo-box img {
-        height: 33px;
+        height: 60px;
         width: auto;
     }
 }
@@ -127,7 +164,7 @@ header {
 
 @media screen and (max-width: 320px) {
     .logo-box img {
-        height: 26px;
+        height: 60px;
         width: auto;
     }
 
@@ -140,6 +177,9 @@ header {
         margin: 28px -7px;
         display: none;
     }
+
+    .logo-box {
+        top: 5%;}
 }
 
 .menu a:hover {
@@ -163,6 +203,10 @@ header {
         width: 100%;
         height: 23vh;
     }
+
+    .menu {
+        display: none;
+    } 
 
 }
 
@@ -252,7 +296,7 @@ header {
     content: ' ';
     border: 1px solid #5ad5fb;
     /* width: 70px; */
-    width: 100%;
+    width: 98%;
     position: absolute;
     top: 40px;
     overflow: hidden;
@@ -305,7 +349,7 @@ header {
     .title-video h1:before {
         content: ' ';
         border: 1px solid #5ad5fb;
-        width: 100%;
+        width: 98%;
         position: absolute;
         top: 27px;
         background: #5ad5fb;
@@ -317,6 +361,10 @@ header {
 
     .title-video h1.fix-line-2:before {
         width: 70%;
+    }
+
+    .title-video h1.fix-line-3:before {
+        width: 93%
     }
 }
 
@@ -349,18 +397,18 @@ header {
     .title-video h1:before {
         content: ' ';
         border: 1px solid #5ad5fb;
-        width: 100%;
+        width: 98%;
         position: absolute;
         top: 25px;
         background: #5ad5fb;
     }
 
     .title-video h1.fix-line:before {
-        width: 53%;
+        width: 48%;
     }
 
     .title-video h1.fix-line-2:before {
-        width: 70%;
+        width: 63%;
     }
 }
 
@@ -377,6 +425,14 @@ header {
 
     .title-video h2 {
         font-size: 10px;
+    }
+
+    .title-video h1.fix-line:before {
+        width: 53%;
+    }
+
+    .title-video h1.fix-line-2:before {
+        width: 70%;
     }
 
 }
