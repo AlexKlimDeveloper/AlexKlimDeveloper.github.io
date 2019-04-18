@@ -42,15 +42,28 @@ a {
 header {
     transition: background .3s ease-in;
     backface-visibility: hidden;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 90px;
+    z-index: 11;
 }
 
-header:hover {
+@media screen and (max-width: 800px) {
+
+    header {
+        background: none;
+        position: absolute;
+    }
+}
+
+/* header:hover {
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100px;
     z-index: 11;
-}
+} */
 
 .logo-box {
     width: auto;
@@ -62,7 +75,7 @@ header:hover {
 }
 
 .logo-box img {
-    height: 40px;
+    height: 50px;
     width: auto;
 }
 
@@ -82,6 +95,7 @@ header:hover {
     font-family: 'Brandon Grotesque Light';
     font-size: 20px;
     transition: all .2s ease-in;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
@@ -175,7 +189,7 @@ header:hover {
 
 .my-video-photo img:hover {
     /* opacity: 0.9; */
-    transform: scale(1.15);
+    transform: scale(1.25);
 }
 
 .main-content .video:hover~.title-video {
@@ -206,18 +220,18 @@ header:hover {
 .title-video {
     position: absolute;
     z-index: 10;
-    top: 78%;
+    top: 70%;
     left: 2rem;
 }
 
 .title-video h1 {
     color: #fff;
-    font-size: 22px;
     font-family: 'Brandon Grotesque Light';
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 22px;
     letter-spacing: 4px;
+    overflow: hidden;
     /* font-weight: normal; */
 }
 
@@ -227,7 +241,7 @@ header:hover {
     font-size: 12px;
     font-weight: 600;
     position: relative;
-    width: 600px;
+    /* width: 600px; */
     line-height: 1.4;
     letter-spacing: 1px;
     /* font-weight: normal; */
@@ -236,11 +250,17 @@ header:hover {
 
 .title-video h1:before {
     content: ' ';
-    border: 1px solid #FFD700;
-    width: 70px;
+    border: 1px solid #5ad5fb;
+    /* width: 70px; */
+    width: 100%;
     position: absolute;
     top: 40px;
-    background: #FFD700;
+    overflow: hidden;
+    background: #5ad5fb;
+}
+
+.title-video h1.fix-line:before {
+    width: 72%;
 }
 
 @media screen and (max-width: 800px) {
@@ -252,7 +272,7 @@ header:hover {
     .title-video {
         position: absolute;
         z-index: 10;
-        top: 59%;
+        top: 50%;
         left: 2rem;
     }
 }
@@ -263,15 +283,16 @@ header:hover {
         font-family: 'Brandon Grotesque Light';
         text-transform: uppercase;
         /* font-weight: normal; */
+        padding-bottom: 16px
     }
 
     .title-video h2 {
         font-size: 12px;
-        width: 300px;
+        /* width: 300px; */
     }
 
     .title-video {
-        top: 52%;
+        top: 50%;
     }
 
     .about-info {
@@ -283,11 +304,19 @@ header:hover {
 
     .title-video h1:before {
         content: ' ';
-        border: 1px solid #FFD700;
-        width: 40px;
+        border: 1px solid #5ad5fb;
+        width: 100%;
         position: absolute;
-        top: 33px;
-        background: #FFD700;
+        top: 27px;
+        background: #5ad5fb;
+    }
+
+    .title-video h1.fix-line:before {
+        width: 53%;
+    }
+
+    .title-video h1.fix-line-2:before {
+        width: 70%;
     }
 }
 
@@ -303,18 +332,35 @@ header:hover {
 
     .title-video h2 {
         font-size: 12px;
-        width: 250px;
+        /* width: 250px; */
     }
 
     .title-video {
-        top: 52%;
+        top: 50%;
     }
 
     .about-info {
-        background: #000;
-        color: #fff;
+        background: #fff;
+        color: #ccc;
         margin-bottom: 5px;
         padding: 7% 1% 1% 1%;
+    }
+
+    .title-video h1:before {
+        content: ' ';
+        border: 1px solid #5ad5fb;
+        width: 100%;
+        position: absolute;
+        top: 25px;
+        background: #5ad5fb;
+    }
+
+    .title-video h1.fix-line:before {
+        width: 53%;
+    }
+
+    .title-video h1.fix-line-2:before {
+        width: 70%;
     }
 }
 
@@ -344,8 +390,8 @@ header:hover {
 
 
 .about-info {
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
     margin-bottom: 5px;
     padding: 5% 3% 3% 3%;
 }
@@ -359,7 +405,7 @@ header:hover {
     width: 400px;
     text-transform: uppercase;
     font-size: 24px;
-    font-weight: normal;
+    /* font-weight: normal; */
     font-family: 'Brandon Grotesque Light';
     margin: 25px auto;
     text-align: center;
@@ -369,7 +415,7 @@ header:hover {
     position: relative;
     overflow: hidden;
     font-size: 24px;
-    font-weight: normal;
+    /* font-weight: normal; */
     text-align: center;
 }
 
@@ -383,7 +429,7 @@ header:hover {
     content: '';
     position: absolute;
     width: 100%;
-    border-top: 2px solid #FFD700;
+    border-top: 2px solid #5ad5fb;
     margin-top: .6em;
 }
 
@@ -398,7 +444,7 @@ header:hover {
 .about-info p {
     width: 400px;
     margin: 0 auto;
-    font-weight: normal;
+    font-weight: bold;
     font-family: 'Brandon Grotesque Light';
     font-size: 18px;
     margin-bottom: 20px;
@@ -406,8 +452,8 @@ header:hover {
 
 @media screen and (max-width: 1278px) {
     .about-info {
-        background: #000;
-        color: #fff;
+        background: #fff;
+        color: #000;
         margin-bottom: 5px;
         padding: 4% 1% 1% 1%;
     }
@@ -445,8 +491,8 @@ header:hover {
     }
 
     .about-info {
-        background: #000;
-        color: #fff;
+        background: #fff;
+        color: #000;
         margin-bottom: -5px;
         padding: 4% 1% 10% 1%;
     }
@@ -479,12 +525,23 @@ header:hover {
     background: #383838;
     text-align: center;
     color: #fff;
-    padding: 70px;
+    padding: 45px 70px;
+    font-weight: bold;
 }
 
 .footer a {
+    font-weight: bold;
     color: #fff;
     transition: all .3s ease-in;
+}
+
+.logo-footer img {
+    height: 41px;
+    width: auto;
+}
+
+.logo-footer {
+    margin-bottom: 15px;
 }
 
 .footer a:hover {
@@ -492,7 +549,7 @@ header:hover {
 }
 
 .footer-link {
-    margin: 20px 0;
+    margin: 0 0 20px 0;
 }
 
 .fa-instagram,
