@@ -127,7 +127,7 @@ header {
         z-index: 1011;
         left: 25px;
         top: 25px;
-        top: 5%;
+        top: 5.5%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -208,7 +208,7 @@ header {
     }
 
     .logo-box {
-        top: 5%;
+        top: 6%;
     }
 }
 
