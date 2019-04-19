@@ -359,6 +359,10 @@ header {
     width: 72%;
 }
 
+.title-video h1.fix-line-2:before {
+    width: 96%;
+}
+
 @media screen and (max-width: 800px) {
     .my-video-photo img {
         opacity: 0.6;
