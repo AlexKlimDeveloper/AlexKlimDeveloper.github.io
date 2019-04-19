@@ -21,6 +21,13 @@ body {
     font-family: 'Brandon Grotesque Light';
     background: #ccc6;
     line-height: 1.4;
+    padding-top: 70px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        padding-top: 0;
+    }
 }
 
 ol,
@@ -42,11 +49,25 @@ a {
 header {
     transition: background .3s ease-in;
     backface-visibility: hidden;
-    position: inherit;
-    background: #383838;
+    position: fixed;
+    background: rgba(56, 56, 56, .5);
     width: 100%;
     height: 70px;
-    z-index: 11;
+    top: 0;
+    z-index: 9998;
+    transition: all 0.5s;
+}
+
+.decoration-header {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 70px;
+    background: #383838;
+} 
+
+.scrollUp {
+    transform: translateY(-70px)
 }
 
 .mob-logo {
@@ -66,7 +87,8 @@ header {
 }
 
 
-.logo-box h4>span:before, .logo-box h4>span:after {
+.logo-box h4>span:before,
+.logo-box h4>span:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -88,6 +110,7 @@ header {
         background: #383838;
         position: inherit;
         height: 100px;
+        transition: all 0s;
     }
 
 }
@@ -102,7 +125,7 @@ header {
 }
 
 .logo-box img {
-    height: 21px;
+    height: 47px;
     width: auto;
 }
 
@@ -127,7 +150,7 @@ header {
         z-index: 1011;
         left: 25px;
         top: 25px;
-        top: 5.5%;
+        top: 4.5%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -139,7 +162,7 @@ header {
     }
 
     .logo-box img {
-        height: 40px;
+        height: 48px;
         width: auto;
     }
 }
@@ -162,6 +185,22 @@ header {
     transition: all .2s ease-in;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+@media screen and (max-width: 750px) {
+    .logo-box {
+        width: auto;
+        height: 30px;
+        position: absolute;
+        z-index: 1011;
+        left: 25px;
+        top: 25px;
+        top: 5.5%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -193,7 +232,7 @@ header {
 
 @media screen and (max-width: 320px) {
     .logo-box img {
-        height: 60px;
+        height: 54px;
         width: auto;
     }
 
@@ -208,7 +247,7 @@ header {
     }
 
     .logo-box {
-        top: 6%;
+        top: 7%;
     }
 }
 
