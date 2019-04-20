@@ -351,7 +351,7 @@ header {
 .title-video h1:before {
     content: ' ';
     border: 1px solid #5ad5fb;
-    width: 95%;
+    width: 96%;
     position: absolute;
     top: 40px;
     overflow: hidden;
