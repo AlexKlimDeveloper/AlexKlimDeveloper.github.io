@@ -343,25 +343,28 @@ header {
     line-height: 1.4;
     letter-spacing: 1px;
     text-transform: uppercase;
+    width: 250%;
+    overflow: hidden;
+    position: absolute;
 }
 
 .title-video h1:before {
     content: ' ';
     border: 1px solid #5ad5fb;
-    width: 98%;
+    width: 95%;
     position: absolute;
     top: 40px;
     overflow: hidden;
     background: #5ad5fb;
 }
 
-.title-video h1.fix-line:before {
+/* .title-video h1.fix-line:before {
     width: 72%;
 }
 
 .title-video h1.fix-line-2:before {
-    width: 155px;
-}
+    width: 96%;
+} */
 
 @media screen and (max-width: 800px) {
     .my-video-photo img {
@@ -403,13 +406,13 @@ header {
     .title-video h1:before {
         content: ' ';
         border: 1px solid #5ad5fb;
-        width: 98%;
+        width: 96%;
         position: absolute;
         top: 27px;
         background: #5ad5fb;
     }
 
-    .title-video h1.fix-line:before {
+    /* .title-video h1.fix-line:before {
         width: 53%;
     }
 
@@ -419,7 +422,7 @@ header {
 
     .title-video h1.fix-line-3:before {
         width: 93%
-    }
+    } */
 }
 
 
@@ -449,13 +452,13 @@ header {
     .title-video h1:before {
         content: ' ';
         border: 1px solid #5ad5fb;
-        width: 98%;
+        width: 95%;
         position: absolute;
         top: 25px;
         background: #5ad5fb;
     }
 
-    .title-video h1.fix-line:before {
+    /* .title-video h1.fix-line:before {
         width: 48%;
     }
 
@@ -465,7 +468,7 @@ header {
 
     .title-video h1.fix-line-4:before {
         width: 86%;
-    }
+    } */
 }
 
 
@@ -483,7 +486,7 @@ header {
         font-size: 10px;
     }
 
-    .title-video h1.fix-line:before {
+    /* .title-video h1.fix-line:before {
         width: 53%;
     }
 
@@ -493,7 +496,7 @@ header {
 
     .title-video h1.fix-line-4:before {
         width: 95%;
-    }
+    } */
 
 }
 
