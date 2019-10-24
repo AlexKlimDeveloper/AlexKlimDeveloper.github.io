@@ -17,9 +17,17 @@ body {
   position: relative;
 }
 
+body.body-portfolio {
+  height: auto !important;
+}
+
 img {
   width: 100%;
   transition: box-shadow .2s ease-in;
+}
+
+.m-top {
+  margin-top: 100px !important;
 }
 
 .container {
