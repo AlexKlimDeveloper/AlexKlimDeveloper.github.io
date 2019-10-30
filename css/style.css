@@ -10,7 +10,7 @@ body {
 }
 
 .bg-main-page-red-cover {
-  rgba(233, 110, 94, 0.8);
+  background: rgba(233, 110, 94, 0.8);
 }
 
 header {
