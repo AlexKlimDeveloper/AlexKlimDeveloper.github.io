@@ -9,6 +9,10 @@ body {
   line-height: 1.4;
 }
 
+.bg-main-page-red-cover {
+  rgba(233, 110, 94, 0.8);
+}
+
 header {
   background-image: linear-gradient(to right bottom, rgba(233, 110, 94, 0.8), rgba(255, 86, 35, 0.8)), url(../img/bg.jpg);
   background-size: cover;
