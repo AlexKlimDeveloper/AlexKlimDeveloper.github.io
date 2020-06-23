@@ -248,15 +248,19 @@ img:hover {
 @media screen and (max-width: 600px) {
   .site-1 img {
     width: 100%;
+    height: auto;
   }
   .site-2 img {
     width: 100%;
+    height: auto;
   }
   .site-3 img {
     width: 100%;
+    height: auto;
   }
   .site-4 img {
     width: 100%;
+    height: auto;
   }
   .site-1,
   .site-2,
