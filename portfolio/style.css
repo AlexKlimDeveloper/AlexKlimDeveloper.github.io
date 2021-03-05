@@ -237,6 +237,10 @@ img:hover {
   transition: all .2s;
 }
 
+.filter-img img {
+  filter: opacity(0.8);
+}
+
 /* Adaptive Style */
 
 /* On screens that are 992px or less, set the background color to blue */
